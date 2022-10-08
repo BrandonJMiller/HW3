@@ -1,0 +1,259 @@
+<!--
+Name: Brandon Miller
+Class Name: CPSC 332
+Assignment Name: Homework 3 - CSS
+Last Modified Date 10/7/22
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Career Summary</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <link rel="icon" type="image/x-icon" href="bmlogo.webp">
+    <style>
+
+        body {
+            max-width: 100%;
+            width: 100%;
+            margin: 0px auto;
+        }
+
+        header {
+            background: lightslategray;
+            line-height: 10px;
+            max-width: 100%;
+        }
+
+        main {
+            background: cornflowerblue;
+            height: 900px;
+            text-align: center;
+        }
+
+        .left {
+            background: rgb(52, 188, 52);
+            height: 900px;
+            float: left;
+            width: 30%;
+            text-align: left;
+        }
+
+        .profile {
+            max-width: 100%;
+            max-height: auto;
+        }
+
+        p, h1, h2 {
+            padding-left: 10px;
+            padding-top: 10px;
+            margin: 0px;
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(odd) {
+            text-align: center;
+            background-color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: grey;
+        }
+
+        th {
+            text-align: center;
+            background-color: black;
+            color: white
+        }
+
+        .career, .edu, .qualifications{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ol {
+            padding-left: 1px;
+        }
+
+        ol li{
+            list-style-type: upper-roman;
+            list-style-position: inside;
+            color: white;
+            font-size: 24;
+            margin-left: 1px;
+        }
+
+        h1, h2{
+            text-align: center;
+        }
+        
+        hr.divider {
+            border-top: 3px solid black;
+        }
+
+        .logo {
+            max-height: 100px;
+            max-width: 100px;
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        .cs {
+            max-height: 100px;
+            max-width: auto;
+            border-radius: 50%;
+        }
+
+        .hobbypic {
+            max-height: 100px;
+            max-width: auto;
+        }
+
+        nav {
+            font-size: 20px;
+            display: block;
+            text-align: right;
+            position: relative;
+            top: -50px;
+        }
+    
+    </style>
+</head>
+<body>
+    <body>
+        <header>        
+            <img class="logo" src="bmlogo.webp"> 
+            <nav>
+                <a href="#intro">Introduction  ---  </a>
+                <a href="#career-summary">Career Summary  ---  </a>               
+                <a href="#edu">Education  ---  </a>
+                <a href="#qual">Qualifications  ---  </a>                
+                <a href="#hobbies">Interests and Hobbies</a>
+            </nav>                  
+        </header>
+
+        <div id="container">
+            <div class="left">
+                <img id="intro" class="profile" src="bmpic.png" alt="">
+                <h1>Brandon Miller</h1>
+                <h2>Software Developer</h2>
+                <hr class="divider">
+                <p>
+                    My name is Brandon Miller and I'm currently a junior at Gonzaga University studying computer science.
+                    My goal since starting at Gonzaga is to land a job at a tech company where large-scale software products 
+                    are developed for many users. I consider myself to be a determined worker, and someone who is always 
+                    open to learn and look into new ideas or concepts. Although I'm still in the early stages of my 
+                    software career, I feel like I can bring lots to the table for any company.
+                </p>
+                <hr class="divider">
+                <p>I have experience coding in the following languages</p>
+                <ul>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>HTML</li>
+                </ul>
+            </div> 
+            
+            <main>
+                <p><h1 id="career-summary">Career Summary</h1></p>
+                    
+                <table class="career" style="width:50%">
+                    <tr>
+                        <th>Company</th>
+                        <th>Role</th>
+                        <th>Year</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>Limelyte</td>
+                        <td>Software Engineer Intern</td>
+                        <td>Summer, 2022</td>
+                        <td>Spokane, WA</td>
+                    </tr>
+                    <tr>
+                        <td>Dunkin Donuts</td>
+                        <td>Cashier</td>
+                        <td>Summer, 2021</td>
+                        <td>Bakersfield, CA</td>
+                    </tr>
+                    <tr>
+                        <td>Taco Bell</td>
+                        <td>Cashier</td>
+                        <td>Summer, 2019</td>
+                        <td>Bakersfield, CA</td>
+                    </tr>
+                </table>
+            
+                <p><h1 id="edu">Education</h1></p>
+                <table class="edu" style="width:50%">
+                    <tr>
+                        <th>School</th>
+                        <th>Years</th>
+                        <th>GPA</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>Highland High School</td>
+                        <td>2016-2020</td>
+                        <td>4.3</td>
+                        <td>Bakersfield, CA</td>
+                    </tr>
+                    <tr>
+                        <td>Gonzaga University</td>
+                        <td>2020-Present</td>
+                        <td>3.1</td>
+                        <td>Spokane, WA</td>
+                    </tr>
+                </table>
+
+                <p><h1 id="qual">Qualifications</h1></p>
+                <table class="qualifications" style="width:50%">
+                    <tr>
+                        <th>Achievement</th>
+                        <th>Year</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>Internship at Limelyte</td>
+                        <td>2022</td>
+                        <td>Spokane, WA</td>
+                    </tr>
+                    <tr>
+                        <td>Dean's list at Gonzaga</td>
+                        <td>2022</td>
+                        <td>Spokane, WA</td>
+                    </tr>
+                </table>
+                
+                <p><h1 id="hobbies">Interests and Hobbies</h1></p>
+                <p>Clicking the image under the list directs to my github.</p>
+                <ol>
+                    <li>Computer Science</li> 
+                    <li>Music</li> 
+                    <li>Gaming</li>
+                    <li>Sports</li>
+                </ol>
+                <p><a href="https://github.com/BrandonJMiller" target="_blank">
+                    <img class="cs" src="cspic.jpg" alt="github.com/BrandonJMiller">
+                </a></p>
+
+                <p>
+                    <img class= "hobbypic" src="musicpic.jpg" alt="MusicPicture" width="140" height="132">
+                    <img class= "hobbypic" src="mw2pic.webp" alt="MW2Picture" width="140" height="132">
+                    <img class= "hobbypic" src="bballpic.jpg" alt="BasketballPicture" width="140" height="132">
+                </p>
+            </main>
+        </div>
+    </body>
+</body>
+</html>
